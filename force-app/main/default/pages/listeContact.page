@@ -1,0 +1,12 @@
+<apex:page
+  standardController="Contact"
+  extensions="ContactController"
+  action="{!show}"
+>
+  <apex:pageBlock title="Liste des contacts">
+    <apex:dataTable value="{!contacts}" var="c" border="2">
+      <apex:column value="{!c.AccountId}" />
+    </apex:dataTable>
+  </apex:pageBlock>
+  <apex:slds />
+</apex:page>
